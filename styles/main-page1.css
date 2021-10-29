@@ -34,6 +34,7 @@ button{
 .nav-logo {
   width: 101px;
   height: 101px;
+  display: flex;
 }
 .nav-pagination-links ul {
   display: flex;
@@ -469,6 +470,7 @@ margin-top: 3rem;
   }
 }
 /* Section1 style end */
+
 .aktivitelerimiz-title{
   text-align: center;
   color: var(--dark-green);
@@ -559,6 +561,9 @@ list-style: none;
 }
 .card-item:hover .card-item-date{
   display: flex;
+}
+.swiper2 .card-item:hover .card-item-date{
+  display: none;
 }
 .card-item:hover{
   box-shadow: 0px 10px 30px 0px #3333331A;
@@ -756,6 +761,33 @@ list-style: none;
   }
 
 }
+.swiper2 .card-item-date{
+  display: none;
+  }
+  .mySwiper2 .card-item-btn{
+background: none;
+border-radius: 0;
+color: #2E3872;
+font-size: 18px;
+font-weight: 400;
+padding: 0;
+  }
+  @media screen and (max-width:1024px) {
+    .mySwiper2 .card-item-btn{
+      font-size: 16px;
+        }
+  }
+  @media screen and (max-width:768px) {
+    .mySwiper2 .card-item-btn{
+      font-size: 14px;
+        }
+  }
+
+  @media screen and (max-width:425px) {
+    .mySwiper2 .card-item-btn{
+      font-size: 12px;
+        }
+  }
 
 /* Aktivitelerimiz style end */
 
@@ -1049,7 +1081,7 @@ padding: 0 20px;
 .partners{
   margin-top: 120px;
 }
-.mySwiper2 .swiper-wrapper{
+.mySwiper3 .swiper-wrapper{
   display: flex;
   align-items: center;
 }

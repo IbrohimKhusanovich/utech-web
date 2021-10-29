@@ -1,0 +1,39 @@
+.nav-logo{
+ align-items: center;
+}
+.nav-logo-content{
+ width: max-content;
+}
+.nav-logo-title{
+ width: 50%;
+ text-align: center;
+ border-right: 3px solid #fff;
+}
+.nav-registration{
+ border-left: 3px solid #fff;
+ height:40px;
+ display: flex;
+ align-items: center;
+}
+@media screen and (max-width:1270px) {
+ .nav-logo-title{
+  width: 50%;
+  padding-right: 1rem;
+ }
+}
+@media screen and (max-width:1180px) {
+ .nav-logo-title{
+  width: 100%;
+  border: none;
+  padding: 0;
+margin-bottom: 2rem;
+ }
+ .nav-logo-content{
+  flex-direction: column;
+  justify-content: center;
+  height: max-content;
+ }
+ .nav-registration{
+  border: 0;
+  }
+}

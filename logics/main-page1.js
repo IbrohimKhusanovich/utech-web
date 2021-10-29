@@ -3,6 +3,7 @@ const hamburgerMenu=document.querySelector('.menu-panel')
 const closeMenuIcon=document.querySelector('.nav-close-menu')
 const slideWrapper=document.querySelectorAll('.mySwiper')
 const slideWrapper2=document.querySelectorAll('.mySwiper2')
+const slideWrapper3=document.querySelectorAll('.mySwiper3')
 const footer=document.querySelector('.footer-grid')
 hamburger.addEventListener('click', ()=>{
 hamburgerMenu.classList.add('doorMenu')
@@ -85,7 +86,26 @@ slideWrapper.forEach(item=>{
         `
        }
       })
-slideWrapper2.forEach(item=>{
+      slideWrapper2.forEach(item=>{
+        for(let i=0;i<data.length;i++){
+         item.firstElementChild.innerHTML+=`
+         <div class="swiper-slide">
+        <div class="card-item">
+       <img class="card-item-img" src="${data[i].img}" alt="card-img">
+       <div class="card-item-texts">
+       <h4 class="card-item-title">${data[i].title}</h4>
+        <p class="card-item-arrow"></p>
+        <p class="card-item-description" >${data[i].description}</p>
+        <div class="card-item-bottom">
+           <button class="card-item-btn">Get More -></button>
+               </div>
+               </div>
+               </div>
+               </div>
+               `
+              }
+             })
+slideWrapper3.forEach(item=>{
  for(let i=0;i<data2.length;i++){
   item.firstElementChild.innerHTML+=`
   <div class="swiper-slide">
