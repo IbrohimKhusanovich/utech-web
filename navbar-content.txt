@@ -1,0 +1,40 @@
+ <div class="container">
+ <nav class="navbar">
+   <div class="menu-panel">
+    <i class="fas fa-times nav-close-menu"></i>
+    <div class="nav-logo nav-logo-content">
+     <img
+    class="nav-logo"
+    src="../assets/images/main/logo-web.png"
+    alt="logo-web"
+    />
+    <h4 class="nav-logo-title">Teknoloji
+      Kulübü</h4>
+   </div>
+    <!--Navbar logo img end-->
+    <div class="nav-pagination-links">
+      <ul>
+        <li>Home</li>
+        <li>Hakkimizda</li>
+        <li>Duyurular</li>
+        <li>Aktivitelerimiz</li>
+        <li>Yayinlar</li>
+        <li>Projelerimiz</li>
+      </ul>
+     </div>
+    <!--Navbar pagination links end-->
+    <div class="nav-registration footer-bottom-right">
+
+        <a href="#"><img src="../assets/images/main/Frame(11).svg" alt="instagram"></a>
+        <a href="#"><img src="../assets/images/main/Frame(9).svg" alt="you tube"></a>
+        <a href="#"><img src="../assets/images/main/Frame(10).svg" alt="linkedin"></a>
+
+    </div>
+    <!--Navbar registration end-->
+   </div>
+   <!--Navbar menu panel end-->
+   <i  class="fas fa-bars nav-hamburger"></i><!--hambueger icon-->
+  </nav>
+  <!--Navbar end-->
+</div>
+<!--Navbar container end-->

@@ -1,0 +1,142 @@
+.section1{
+ margin-top: 90px;
+}
+.section1-box {
+ display: flex;
+ margin-bottom: 120px;
+ align-items: center;
+}
+.section1-img{
+ width: 540px;
+}
+.section1-box2 .sec1-box-texts{
+ margin: 0;
+}
+.section1-box2{
+ margin-bottom: 120px;
+}
+.section1-box2 .section1-img{
+ margin-left: auto;
+}
+.sec1-box-texts{
+ width:35%;
+ margin: 0 auto;
+}
+.sec1-box-title{
+ font-weight: 600;
+ font-size: 36px;
+ margin-bottom: 60px;
+}
+.sec1-box-description{
+ font-weight: 400;
+ margin-bottom: 80px;
+ line-height: 28px;
+ font-size: 18px;
+}
+.see-more{
+ font-weight: 600;
+ text-decoration: none;
+ font-size: 16px;
+ color: var(--see-more-link-color);
+}
+.see-more img{
+ margin-top: 5px;
+ margin-left: 10px;
+}
+@media screen and (max-width:1180px) {
+ .section1{
+  margin-top: 50px;
+ }
+ .section1-box{
+   flex-direction: column-reverse;
+ }
+
+ .section1-box2 .section1-img{
+   margin:0;
+ }
+ .section1-box2{
+   flex-direction: column;
+ }
+ .sec1-box-texts{
+   width:80%;
+   text-align: center;
+ }
+ .section1-img{
+   width: 590px;
+ }
+ .sec1-box-title{
+   font-size: 40px;
+   margin-bottom: 60px;
+ }
+ .sec1-box-description{
+   line-height: 28px;
+   font-size: 25px;
+ }
+ .see-more{
+   font-weight: 600;
+   font-size: 16px;
+   justify-content: center;
+   margin-bottom: 2rem;
+ }
+ .see-more img{
+   margin-top: 5px;
+   margin-left: 10px;
+ }
+}
+@media screen and (max-width:768px) {
+
+ .sec1-box-texts{
+   width:90%;
+ }
+ .section1-img{
+   width: 330px;
+ }
+ .sec1-box-title{
+   font-size: 28px;
+   margin-bottom: 40px;
+ }
+ .sec1-box-description{
+   line-height: 28px;
+   font-size: 18px;
+   margin-bottom: 40px;
+ }
+ .see-more{
+   font-weight: 600;
+   font-size: 14px;
+   justify-content: center;
+ }
+ .see-more img{
+   width: 40px;
+   margin-top: 5px;
+   margin-left: 10px;
+ }
+}
+@media screen and (max-width:425px) {
+
+ .sec1-box-texts{
+   width:90%;
+ }
+ .section1-img{
+   width: 230px;
+ }
+ .sec1-box-title{
+   font-size: 20px;
+   margin-bottom: 20px;
+ }
+ .sec1-box-description{
+   line-height: 28px;
+   font-size: 13px;
+   margin-bottom: 20px;
+ }
+ .see-more{
+   font-weight: 600;
+   font-size: 14px;
+   justify-content: center;
+ }
+ .see-more img{
+   width: 40px;
+   margin-top: 5px;
+   margin-left: 10px;
+ }
+}
+/* Section1 style end */

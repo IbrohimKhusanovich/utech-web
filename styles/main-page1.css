@@ -40,14 +40,15 @@ button{
   display: flex;
   list-style: none;
 }
-.nav-pagination-links ul li {
+.nav-pagination-links ul li a{
+  text-decoration: none;
   color: var(--opacity-texts-color);
   font-weight: 500;
   font-size: 16px;
   padding: 0 20px;
   cursor: pointer;
 }
-.nav-pagination-links ul li:hover{
+.nav-pagination-links ul li a:hover{
  color: var(--texts-color);
 }
 .nav-registration button{
@@ -1091,6 +1092,7 @@ padding: 0 20px;
   }
 }
 /* Partners style end */
+
 .footer{
   background: #030101;
   padding: 45px 0;
@@ -1171,3 +1173,4 @@ padding: 0 12px;
   font-size: 20px;
 }
 }
+/* Footer style end */

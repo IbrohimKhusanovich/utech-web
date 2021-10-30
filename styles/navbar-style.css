@@ -1,0 +1,242 @@
+:root{
+ --button-color:linear-gradient(
+   90deg, #218986 -0.9%, #0E6774 52.49%, #0C6766 100%);
+   --texts-color:#fff;
+   --opacity-texts-color:#fff9;
+   --menu-panel-background: linear-gradient(90deg, #218986 -0.9%, #0E6774 52.49%, #0C6766 100%);
+   --dark-blue:#42495b;
+   --see-more-link-color:#2E3872;
+   --dark-green:#218986;
+}
+body {
+ background-color: #f1f1f1;
+}
+.container {
+ padding: 0 165px;
+ width: 100%;
+}
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Inter',sans-serif;
+}
+button{
+ cursor: pointer;
+ border: none;
+ outline: none;
+}
+.navbar{
+  background: rgb(29,131,130);
+  background: linear-gradient(90deg, rgba(29,131,130,1) 0%, rgba(15,106,117,1) 50%, rgba(29,131,130,1) 100%);
+}
+.navbar,.menu-panel{
+width: 100%;
+height: max-content;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.nav-logo {
+ width: 101px;
+ height: 101px;
+ display: flex;
+}
+.nav-pagination-links ul {
+ display: flex;
+ list-style: none;
+}
+.nav-pagination-links ul li a{
+ color: var(--opacity-texts-color);
+ text-decoration: none;
+ font-weight: 500;
+ font-size: 16px;
+ padding: 0 20px;
+ cursor: pointer;
+}
+.nav-pagination-links ul li a:hover{
+color: var(--texts-color);
+}
+.nav-registration button{
+background: none;
+border: none;
+color: var(--texts-color);
+font-size: 14px;
+font-weight: 500;
+margin: 0 10px;
+cursor: pointer;
+}
+.nav-registration button:hover{
+opacity: .7;
+}
+.nav-registration .sign-up{
+border: 2px solid var(--texts-color);
+border-radius: 10px;
+padding: 10px 25px;
+}
+.menu-panel{
+display: flex;
+}
+.nav-hamburger{
+display: none;
+}
+.nav-close-menu{
+display: none;
+}
+@media screen and (max-width:1440px) {
+.container{
+padding: 0 70px;
+}
+}
+@media screen and (max-width:1180px) {
+.container{
+ padding: 0 60px;
+
+}
+.nav-close-menu{
+ display: block;
+ position: absolute;
+ top: 1.5rem;
+ right: 7%;
+ color: var(--texts-color);
+ font-size: 26px;
+}
+.menu-panel{
+ display: flex;
+ opacity: 0;
+ flex-direction: column;
+ justify-content: center;
+ transition: all .6s ease-out;
+ align-items: center;
+ background: var(--menu-panel-background);
+ transform: translateX(-200%);
+
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100vw;
+ height: 100vh;
+}
+.doorMenu{
+ transform: translateX(0) !important;
+ opacity: 1;
+}
+.navbar{
+ justify-content: end;
+}
+.nav-logo{
+width: 200px;
+height: 200px;
+margin-bottom: 1rem;
+}
+.nav-pagination-links ul{
+display: block;
+text-align: center;
+}
+.nav-pagination-links ul li{
+font-size: 25px;
+padding: 20px 0;
+}
+.nav-hamburger{
+  margin: 1rem 0;
+ color: var(--texts-color);
+ font-size: 26px;
+ display: flex;
+ justify-content: flex-end;
+
+}
+.nav-registration button{
+ font-size: 25px;
+ margin: 0 40px;
+}
+.nav-registration{
+ margin-top: 2rem;
+}
+
+}
+@media screen and (max-width:768px) {
+.container{
+ padding: 0 40px;
+}
+.nav-hamburger{
+ margin: .6rem 0;
+}
+.nav-pagination-links ul li{
+ font-size: 20px;
+ padding: 13px 0;
+}
+.nav-logo{
+ width: 150px;
+ height: 150px;
+}
+.nav-close-menu{
+  top: 1rem;
+}
+.nav-close-menu,.nav-hamburger{
+ font-size: 20px;
+}
+.nav-registration button{
+ font-size: 20px;
+ margin: 0 20px;
+}
+.nav-registration{
+ margin-top: 1rem;
+}
+}
+@media screen and (max-width:425px) {
+.nav-close-menu,.nav-hamburger{
+ font-size: 15px;
+}
+.container{
+ padding: 0 20px;
+}
+.nav-registration button{
+ font-size: 17px;
+ margin: 0 15px;
+}
+.nav-registration{
+ margin-top: 1rem;
+}
+}
+
+
+.nav-logo{
+ align-items: center;
+ color: #fff;
+}
+.nav-logo-content{
+ width: max-content;
+}
+.nav-logo-title{
+ width: 50%;
+ text-align: center;
+ border-right: 3px solid #fff;
+}
+.nav-registration{
+ border-left: 3px solid #fff;
+ height:40px;
+ display: flex;
+ align-items: center;
+}
+@media screen and (max-width:1270px) {
+ .nav-logo-title{
+  width: 50%;
+  padding-right: 1rem;
+ }
+}
+@media screen and (max-width:1180px) {
+ .nav-logo-title{
+  width: 100%;
+  border: none;
+  padding: 0;
+margin-bottom: 2rem;
+ }
+ .nav-logo-content{
+  flex-direction: column;
+  justify-content: center;
+  height: max-content;
+ }
+ .nav-registration{
+  border: 0;
+  }
+}

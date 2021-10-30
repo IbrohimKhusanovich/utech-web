@@ -1,0 +1,20 @@
+<footer class="footer">
+  <div class="container">
+  <div class="footer-grid">
+
+  </div>
+  <div class="footer-bootom-links">
+    <div class="footer-bottom-left">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+    </div>
+    <div class="footer-bottom-right">
+      <a href="#"><img src="../assets/images/main/Frame(11).svg" alt="instagram"></a>
+      <a href="#"><img src="../assets/images/main/Frame(9).svg" alt="you tube"></a>
+      <a href="#"><img src="../assets/images/main/Frame(10).svg" alt="linkedin"></a>
+    </div>
+  </div>
+  </div>
+  <!--Footer container end-->
+</footer>
+<!--Footer section end-->
