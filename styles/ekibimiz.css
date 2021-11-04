@@ -1,0 +1,111 @@
+.ekibimiz-title{
+font-weight: 600;
+font-size: 36px;
+margin-top: 80px;
+color: #42495b;
+}
+.ekibimiz-item{
+ display: flex;
+ margin-top: 30px;
+ flex-direction: column;
+ align-items: center;
+}
+.person-avatar{
+width: 255px;
+height: 255px;
+object-fit: cover;
+}
+.person-name{
+ font-weight: 500;
+ font-size: 24px;
+ margin-top: 30px;
+}
+.person-job{
+ font-weight: 400;
+ font-size: 18px;
+ margin:20px 0;
+}
+.person-mail-box a:first-child img{
+margin-right: 30px;
+}
+.person-mail-box {
+ display: flex;
+ justify-content: center;
+}
+.person-mail-box a{
+ text-decoration: none;
+ width: max-content;
+}
+.ekibimiz-box{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ row-gap: 100px;
+}
+@media screen and (max-width:1350px){
+ .ekibimiz-box{
+  grid-template-columns: 1fr 1fr 1fr;
+ }
+}
+@media screen and (max-width:1024px){
+ .ekibimiz-box{
+  grid-template-columns: 1fr 1fr;
+ }
+}
+@media screen and (max-width:768px){
+ .ekibimiz-box{
+ row-gap: 60px;
+ }
+ .ekibimiz-title{
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 50px;
+  }
+  .person-avatar{
+   width: 200px;
+   height: 200px;
+  }
+  .person-name{
+   font-size: 20px;
+  }
+  .person-job{
+   font-size: 16px;
+  }
+  .person-mail-box a:first-child img{
+   margin-right: 25px;
+   }
+   .person-mail-box a img{
+    width: 20px;
+    }
+}
+@media screen and (max-width:550px) {
+ .ekibimiz-box{
+  row-gap: 40px;
+  }
+  .ekibimiz-title{
+   font-weight: 600;
+   font-size: 20px;
+   margin-top: 40px;
+   }
+   .person-avatar{
+    width: 150px;
+    height: 150px;
+   }
+   .person-name{
+    font-size: 16px;
+   }
+   .person-job{
+    font-size: 14px;
+   }
+   .person-mail-box a:first-child img{
+    margin-right: 20px;
+    }
+    .person-mail-box a img{
+     width: 17px;
+     }
+}
+@media screen and (max-width:425px){
+ .ekibimiz-box{
+  grid-template-columns: 1fr;
+  row-gap: 40px;
+  }
+}

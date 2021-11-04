@@ -1,3 +1,11 @@
+                    /*************STYLE LINK FOOTER COMPONENT*************\
+
+
+<link rel="stylesheet" href="../styles/footer-style.css">
+
+
+                    /*********HTML CODES FOOTER COMPONENT*********\
+
 <footer class="footer">
   <div class="container">
   <div class="footer-grid">
@@ -18,3 +26,9 @@
   <!--Footer container end-->
 </footer>
 <!--Footer section end-->
+
+
+                    /*********LOGIC LINK FOOTER COMPONENT**********\
+
+                    
+<script src="../logics/footer-logics.js"></script>
