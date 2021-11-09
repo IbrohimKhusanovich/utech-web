@@ -110,7 +110,7 @@ padding: 0 70px;
  align-items: center;
  background: var(--menu-panel-background);
  transform: translateX(-200%);
-
+z-index: 20;
  position: fixed;
  top: 0;
  left: 0;

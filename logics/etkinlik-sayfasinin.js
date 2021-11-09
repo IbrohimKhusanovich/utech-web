@@ -59,6 +59,7 @@ openClose.addEventListener('click', ()=>{
   postMenu.classList.toggle('active')
   openClose.classList.toggle('transformIcon')
 })
+
 const data3=[
   {img:'https://images.unsplash.com/photo-1542642839-83adadcbe645?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bmlnaHQlMjBjaXR5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'},
   {img:'https://images.unsplash.com/photo-1542642839-83adadcbe645?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bmlnaHQlMjBjaXR5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'},

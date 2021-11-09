@@ -1,0 +1,247 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+ font-family: 'Inter', sans-serif;
+}
+.iletisim-section{
+ display: grid;
+ grid-template-columns: 38.5% 61.5%;
+}
+.left-box-iletisim{
+background: #3f9794;
+width: 100%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding:80px 50px;
+color: #fff;
+background:url(../assets/images/iletisin/Ellipse\ 14\ \(1\).png), url(../assets/images/iletisin/Ellipse\ 12\ \(1\).png),#3f9794;
+background-position: bottom 124px right 92px,bottom right;
+background-size: 170px,250px;
+background-repeat: no-repeat;
+}
+.left-top-box-iletisim h1{
+ font-weight: 600;
+ font-size: 36px;
+ margin-bottom: 20px;
+}
+.left-top-box-iletisim p{
+ font-weight: 400;
+ font-size: 20px;
+ color: #ffffff90;
+}
+.address-phone-box a{
+ font-size: 20px;
+ font-weight: 400;
+display: flex;
+text-decoration: none;
+color: #fff;
+margin-bottom: 50px;
+}
+.address-phone-box a img{
+ margin-right: 24px;
+}
+.left-bottom-box-iletisim a{
+margin-right: 32px;
+}
+@media screen and (max-width:1024px) {
+ .left-box-iletisim{
+  padding: 60px 20px;
+ }
+ .left-top-box-iletisim h1{
+  font-size: 27px;
+ }
+ .left-top-box-iletisim p{
+  font-size: 15px;
+ }
+ .address-phone-box a img{
+  width:20px;
+ }
+ .address-phone-box a{
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+ }
+ .left-bottom-box-iletisim{
+  display: flex;
+  justify-content: space-between;
+ }
+ .left-bottom-box-iletisim a{
+  margin-right: 0;
+  }
+}
+@media screen and (max-width:768px) {
+ .iletisim-section{
+  display: grid;
+  grid-template-columns: 1fr;
+ }
+ .left-box-iletisim{
+  padding: 60px 40px;
+ }
+ .left-top-box-iletisim h1{
+  font-size: 36px;
+ }
+ .left-top-box-iletisim p{
+  font-size: 22px;
+ }
+ .address-phone-box a img{
+  width:20px;
+ }
+ .address-phone-box a{
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+ }
+ .left-bottom-box-iletisim{
+  display: flex;
+  justify-content: left;
+ }
+ .left-bottom-box-iletisim a{
+  margin-right: 50px;
+  }
+}
+@media screen and (max-width:425px) {
+ .left-box-iletisim{
+  padding: 50px 20px;
+ }
+ .left-top-box-iletisim h1{
+  font-size: 26px;
+ }
+ .left-top-box-iletisim p{
+  font-size: 18px;
+ }
+ .left-bottom-box-iletisim{
+  justify-content: space-between;
+ }
+ .left-bottom-box-iletisim a{
+margin-right: 0;
+ }
+ .left-box-iletisim{
+  background-position: bottom 104px right 62px,bottom right;
+  background-size: 150px,200px;
+  }
+}
+/* iletisim left box style end */
+.right-box-iletisim{
+ padding: 80px 0;
+ padding-right: 50px;
+ height: 100vh;
+}
+.form-iletisim-item{
+ margin-left: 50px;
+}
+.right-box-iletisim form{
+ display: flex;
+ flex-wrap: wrap;
+}
+.form-iletisim-item input::placeholder{
+color: #110D2430;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+}
+.btn-iletisim-form{
+ width: 100%;
+ display:flex;
+ justify-content: right;
+ margin-top: 3rem;
+}
+.btn-iletisim-form button{
+ padding: 24px 60px;
+ font-size: 20px;
+ font-weight: 500;
+ color: #fff;
+ background-color: #288582;
+ border-radius: 6px;
+ border: none;
+ cursor: pointer;
+}
+.form-iletisim-item input:focus{
+border-color: #3f9794;
+}
+.form-iletisim-item input{
+ width:370px;
+ border: none;
+ outline: none;
+ margin-bottom: 50px;
+ height: 70px;
+ font-size: 20px;
+ border-bottom: 2px solid #DAD9DF;
+}
+.form-iletisim-item:last-child,.form-iletisim-item:last-child input {
+width: 100%;
+}
+.form-iletisim-item label{
+ display: block;
+ font-weight: 400;
+ font-weight: 16px;
+ color: #110D2450;
+}
+@media screen and (max-width:1450px) {
+ .form-iletisim-item input{
+  width: 100%;
+ }
+ .form-iletisim-item,.form-iletisim-item input {
+  width: 100%;
+  }
+}
+@media screen and (max-width:768px) {
+ .right-box-iletisim{
+  padding: 80px 0;
+  padding-right: 40px;
+ }
+ .form-iletisim-item{
+  margin-left: 40px;
+ }
+}
+@media screen and (max-width:500px) {
+ .btn-iletisim-form{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  margin-top: 2rem;
+ }
+ .btn-iletisim-form button{
+  padding: 24px 60px;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+  margin-left: 40px;
+  color: #fff;
+  background-color: #288582;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+ }
+}
+@media screen and (max-width:425px) {
+ .right-box-iletisim{
+  padding: 80px 0;
+  padding-right: 20px;
+ }
+ .form-iletisim-item{
+  margin-left: 20px;
+ }
+ .btn-iletisim-form{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  margin-top: 2rem;
+ }
+ .btn-iletisim-form button{
+  padding: 24px 60px;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+  margin-left: 20px;
+  color: #fff;
+  background-color: #288582;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+ }
+}
