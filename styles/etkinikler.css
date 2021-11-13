@@ -1,0 +1,98 @@
+:root{
+ --button-color:linear-gradient(
+   90deg, #218986 -0.9%, #0E6774 52.49%, #0C6766 100%);
+   --texts-color:#fff;
+   --opacity-texts-color:#fff9;
+   --menu-panel-background: linear-gradient(90deg, #218986 -0.9%, #0E6774 52.49%, #0C6766 100%);
+   --dark-blue:#42495b;
+   --see-more-link-color:#2E3872;
+   --dark-green:#218986;
+}
+*{
+ margin: 0;padding: 0;box-sizing: border-box;
+ font-family: inter;
+}
+button{
+ cursor: pointer;
+ border: none;
+}
+.title-etkinikler{
+ font-weight: 600;
+ font-size: 36px;
+ color: #42495b;
+ margin-top: 100px;
+ margin-bottom: 40px;
+}
+.etkiniklerimiz-cards-box{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ row-gap: 4rem;
+}
+.card-item{
+ margin: 0 auto;
+}
+.container {
+ padding: 0 165px;
+ width: 100%;
+}
+@media screen and (max-width:1440px) {
+ .container{
+  padding: 0 70px;
+ }
+}
+@media screen and (max-width:1310px) {
+ .etkiniklerimiz-cards-box{
+  grid-template-columns: 1fr 1fr;
+  }
+ }
+ @media screen and (max-width:1180px) {
+  .container{
+   padding: 0 60px;
+  }
+  .title-etkinikler{
+   font-size: 32px;
+  }
+ }
+ @media screen and (max-width:900px) {
+  .title-etkinikler{
+   font-size: 28px;
+   margin-top: 70px;
+  }
+  .etkiniklerimiz-cards-box{
+   grid-template-columns: 1fr 1fr;
+   }
+   .card-item{
+    width: 300px !important;
+   }
+  }
+@media screen and (max-width:768px) {
+ .title-etkinikler{
+  font-size: 26px;
+  margin-top: 50px;
+ text-align: center;
+ }
+ .container{
+  padding: 0 40px;
+ }
+ .card-item{
+  width: 280px !important;
+ }
+}
+@media screen and (max-width:700px) {
+ .etkiniklerimiz-cards-box{
+  grid-template-columns:1fr 1fr;
+ }
+ .card-item{
+  width: 240px !important;
+ }
+}
+@media screen and (max-width:580px) {
+ .etkiniklerimiz-cards-box{
+  grid-template-columns:1fr;
+ }
+}
+@media screen and (max-width:425px) {
+ .container{
+  padding: 0 20px;
+ }
+}

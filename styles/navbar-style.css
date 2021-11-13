@@ -184,11 +184,11 @@ padding: 20px 0;
 }
 }
 @media screen and (max-width:425px) {
+  .container{
+   padding: 0 20px;
+  }
 .nav-close-menu,.nav-hamburger{
  font-size: 15px;
-}
-.container{
- padding: 0 20px;
 }
 .nav-registration button{
  font-size: 17px;
