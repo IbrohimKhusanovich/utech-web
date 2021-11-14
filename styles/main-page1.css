@@ -568,7 +568,6 @@ list-style: none;
 }
 .card-item:hover{
   box-shadow: 0px 10px 30px 0px #3333331A;
-
 }
 .card-item-btn{
   font-weight: 500;
@@ -765,6 +764,9 @@ list-style: none;
 .swiper2 .card-item-date{
   display: none;
   }
+  .card-item-btn i{
+    margin-left: .5rem;
+   }
   .mySwiper2 .card-item-btn{
 background: none;
 border-radius: 0;
@@ -772,6 +774,8 @@ color: #2E3872;
 font-size: 18px;
 font-weight: 400;
 padding: 0;
+display: flex;
+align-items: center;
   }
   @media screen and (max-width:1024px) {
     .mySwiper2 .card-item-btn{

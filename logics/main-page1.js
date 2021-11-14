@@ -21,12 +21,12 @@ const data=[
  {img:'../assets/images/main/card-img3.png',title:'Lorem Ipsum',time:'12:00',adress:'Zoom',description:'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco'},
 ]
 const data2=[
-  {img:'../assets/images/main/desteklirimiz1.png'},
-  {img:'../assets/images/main/desteklerimiz2.png'},
-  {img:'../assets/images/main/desteklirimiz3.png'},
-  {img:'../assets/images/main/desteklirimiz4.png'},
-  {img:'../assets/images/main/desteklirimiz5.png'},
-  {img:'../assets/images/main/desteklerimiz6.png'}
+  {img:'../assets/images/main/desteklirimiz1.png',link:'#'},
+  {img:'../assets/images/main/desteklerimiz2.png',link:'#'},
+  {img:'../assets/images/main/desteklirimiz3.png',link:'#'},
+  {img:'../assets/images/main/desteklirimiz4.png',link:'#'},
+  {img:'../assets/images/main/desteklirimiz5.png',link:'#'},
+  {img:'../assets/images/main/desteklerimiz6.png',link:'#'}
 ]
 const footerData=[
   {thead:'Hakkimizda',tbody:[
@@ -97,7 +97,7 @@ slideWrapper.forEach(item=>{
         <p class="card-item-arrow"></p>
         <p class="card-item-description" >${data[i].description}</p>
         <div class="card-item-bottom">
-           <button class="card-item-btn">Get More -></button>
+           <button class="card-item-btn">Get More <i class="fas fa-arrow-right"></i></button>
                </div>
                </div>
                </div>
@@ -109,7 +109,7 @@ slideWrapper3.forEach(item=>{
  for(let i=0;i<data2.length;i++){
   item.firstElementChild.innerHTML+=`
   <div class="swiper-slide">
-  <img class="partners-img" src="${data2[i].img}" alt="desteklerimiz">
+ <a href="${data2[i].link}"><img class="partners-img" src="${data2[i].img}" alt="desteklerimiz"> </a>
 </div>
         `
        }
